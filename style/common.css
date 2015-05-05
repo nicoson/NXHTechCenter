@@ -1,0 +1,32 @@
+/**{
+	margin: 0;
+	padding: 0;
+}
+*/
+header{
+	padding: 50px;
+}
+
+header{
+	background: #6f5499;
+	color: white;
+}
+
+header>h4 {
+	text-indent: 100px;
+}
+
+section{
+	padding: 50px 0px;
+}
+
+footer>p {
+	text-align: center;
+}
+
+footer{
+	width: 100%;
+	Height: 200px;
+	background: #6f5499;
+	color: white;
+}

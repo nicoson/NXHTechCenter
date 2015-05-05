@@ -1,6 +1,42 @@
 [
-{
-	"name": "Ubuntu",
-	"url": "/ubuntu"
-}
+	{
+		"name": "Ubuntu",
+		"url": "ubuntu",
+		"color": "#dd4814"
+	},
+	{
+		"name": "MySQL",
+		"url": "mysql",
+		"color": "#015a84"
+	},
+	{
+		"name": "Mongodb",
+		"url": "mongodb",
+		"color": "#3b291f"
+	},
+	{
+		"name": "nodeJS",
+		"url": "nodejs",
+		"color": "#80bd01"
+	},
+	{
+		"name": "GIT",
+		"url": "git",
+		"color": "#829aa8"
+	},
+	{
+		"name": "Sublime",
+		"url": "sublime",
+		"color": "#171814"
+	},
+	{
+		"name": "Chrome",
+		"url": "chrome",
+		"color": "#fbd108"
+	},
+	{
+		"name": "Chrome",
+		"url": "chrome",
+		"color": "#fbd108"
+	}
 ]

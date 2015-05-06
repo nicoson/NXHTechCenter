@@ -1,0 +1,147 @@
+<h2>MySQL</h2>
+
+<ul>
+	<li>
+		<h3>Installation under Ubuntu</h3>
+		<ol>
+			<li>
+				<h4>installation</h4>
+				<code>$ sudo apt-get install mysql-server</code>
+			</li>
+			<li>
+				<h4>test connection</h4>
+				<code>$ sudo netstat -tap | grep mysql</code>
+			</li>
+		</ol>
+	</li>
+
+	<li>
+		<h3>Commands Tips</h3>
+		<ol>
+			<li>
+				<h4>start/stop mysql service</h4>
+				<code>$ /etc/init.d/mysql start；(stop, restart)</code>
+			</li>
+			<li>
+				<h4>login mysql</h4>
+				<code>$mysql -uusername -ppassword</code>
+				<p>or</p>
+				<code>$mysql -uusername -p</code>
+				<h5>note: no space between u and username.</h5>
+			</li>
+
+			<li>
+				<h4>show all database</h4>
+				<code> > show databases;</code>
+			</li>
+			<li>
+				<h4>choose to enter a database</h4>
+				<code> > use database_name;</code>
+			</li>
+			<li>
+				<h4>show all the table under current database</h4>
+				<code> > show tables;</code>
+			</li>
+			<li>
+				<h4>show the table from other database</h4>
+				<code> > show tables from db_name;</code>
+			</li>
+			<li>
+				<h4>show the schema of the table</h4>
+				<code> > show columns from table_name;</code>
+			</li>
+			<li>
+				<h4>create database</h4>
+				<code> > create database database_name;</code>
+			</li>
+			<li>
+				<h4>set the character set when creating database</h4>
+				<code> > create database database_name character set = utf8;</code>
+			</li>
+			<li>
+				<h4>change the character set after create database</h4>
+				<code> > alter database database_name character set = utf8;</code>
+			</li>
+			<li>
+				<h4>show character set (utf8)</h4>
+				<code> > show create database database_name;</code>
+			</li>
+			<li>
+				<h4>delete database</h4>
+				<code> > drop database database_name;</code>
+			</li>
+			<li>
+				<h4>create table</h4>
+				<pre>
+> create table table_name(
+column_name data_type primary key,
+column_name data_type not null / null,
+...
+);
+				</pre>
+			</li>
+			<li>
+				<h4>keys</h4>
+				<pre>
+primary key
+unique key
+default
+null / not null
+				</pre>
+			</li>
+			<li>
+				<h4>delete a table</h4>
+				<code> > drop table table_name;</code>
+			</li>
+			<li>
+				<h4>insert data into table by the whole piece</h4>
+				<code> > insert into table_name values(value1, value2),(value1, value2),...,(value1, value2);</code>
+			</li>
+			<li>
+				<h4>insert for specific column</h4>
+				<code> > insert into table_name(col1,col2) values(value1,value2);</code>
+			</li>
+			<li>
+				<h4>update data in table</h4>
+				<code> > update table_name set col1='value1',col2='value2' where where_definition;</code>
+			</li>
+			<li>
+				<h4>query language</h4>
+				<code> > select * from table_name where.......</code>
+			</li>
+			<li>
+				<h4>delete data from table</h4>
+				<code> > delete from table_name where...</code>
+			</li>
+			<li>
+				<h4>add column into created table</h4>
+				<code> > alert table table_name add column field1 date ,add column field2 time...</code>
+			</li>
+			<li>
+				<h4>delete column from created table</h4>
+				<code> > alert table table_name drop field1;</code>
+			</li>
+			<li>
+				<h4>limit</h4>
+				<code> > select * from table_name limit 3,4；</code>
+				<h5>show the following 4 results start from the 3rd result, can be used for pagination</h5>
+			</li>
+			<li>
+				<h4>order</h4>
+				<code> > select * from table_name order by field1,orderby field2;</code>
+			</li>
+			<li>
+				<h4>exit mysql</h4>
+				<code> > exit;</code><br />
+				<p>or</p>
+				<code> > quit;</code><br />
+				<p>or</p>
+				<code> > q;</code><br />
+			</li>
+			<li>
+				<h4>backup database</h4>
+				<code> > $ mysqldump -uxxxx -pxxxx database_name > \home\xxx\database_name.sql</code>
+			</li>
+		</ol>
+	</li>
+</ul>

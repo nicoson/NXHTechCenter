@@ -1,0 +1,12 @@
+.mycode {
+	border: 1px solid #ccc;
+	background: #F5F5F5;
+	padding: 5px 15px;
+	margin: 5px;
+	font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+	font-size: 12px;
+}
+
+.panel-body {
+	padding: 30px;
+}

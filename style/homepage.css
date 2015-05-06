@@ -1,17 +1,25 @@
-.hp-mainPanel{
+.hp-mainPanel {
 	padding: 0;
 	margin: 0 center;
 	width: 80%;
 }
 
-.hp-grid{
+.hp-grid {
 	padding: 0;
 }
 
-.hp-unit{
+.hp-unit {
 	margin: 2px;
 	padding: 5px;
 	text-align: center;
 	color: white;
 	border-radius: 3px;
+}
+
+.hp-unit:hover {
+	cursor: pointer;
+}
+
+.content-main {
+	padding: 30px;
 }

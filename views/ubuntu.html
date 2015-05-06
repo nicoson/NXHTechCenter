@@ -1,0 +1,116 @@
+<h2>Install Ubuntu in Windows</h2>
+
+<ul>
+	<li>
+		<h3>Preparation:</h3>
+		<h4>UltraISO: write Ubuntu iso to flash disk</h4>
+		<ol>
+			<li>open iso file</li>
+			<li>
+				<h5>bootable -> Write Disk Image</h5>
+				<ol>
+					<li>) write method: USB-HDD+</li>
+					<li>) Xpress Boot: Write new disk MBR -> USB-HDD+</li>
+					<li>) Write new drive boot sector -> Syslinux</li>
+				</ol>
+			</li>
+			<li>Write</li>
+		</ol>
+	</li>
+
+	<li>
+		<h3>Installation:</h3>
+		<ol>
+			<li>install option: other</li>
+			<li>partition:
+				<ol>
+					<li>) /: primary partition</li>
+					<li>) /boot: 200M, </li>
+					<li>) SWAP: 2000M, </li>
+				</ol>
+			</li>
+			<li>* Device for boot load installation: /boot</li>
+		</ol>
+
+		<h4>details: </h4>
+		<ol>
+			<li>
+				<p>) 新分区的类型:	"主分区"</p>
+				<p>&nbsp;&nbsp;新建分区容量:		20000MB</p>
+				<p>&nbsp;&nbsp;新分区的位置:		"起始"</p>
+				<p>&nbsp;&nbsp;用于:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Ext4 日志文件系统"</p>
+				<p>&nbsp;&nbsp;挂载点:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/"</p>
+			</li>
+			<li>
+				<p>) 创建交换空间</p>
+				<p>&nbsp;&nbsp;新分区的类型:	"逻辑分区"</p>
+				<p>&nbsp;&nbsp;新建分区容量:	2000MB,</p>
+				<p>&nbsp;&nbsp;新分区的位置:	按默认选“起始”</p>
+				<p>&nbsp;&nbsp;用于:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;后面选择“交换空间”</p>
+			</li>
+			<li>
+				<p>) 创建“/home”分区</p>
+				<p>&nbsp;&nbsp;新分区的类型:	逻辑分区</p>
+				<p>&nbsp;&nbsp;新建分区容量:	剩余的空间</p>
+				<p>&nbsp;&nbsp;新分区的位置:	起始</p>
+				<p>&nbsp;&nbsp;用于:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Ext4 日志文件系统"</p>
+				<p>&nbsp;&nbsp;挂载点:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/home</p>
+			</li>
+			<li>
+				<p>) 创建“/boot”分区</p>
+				<p>&nbsp;&nbsp;新分区的类型:	逻辑分区</p>
+				<p>&nbsp;&nbsp;新建分区容量:	200M</p>
+				<p>&nbsp;&nbsp;新分区的位置:	起始</p>
+				<p>&nbsp;&nbsp;用于:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Ext4 日志文件系统"</p>
+				<p>&nbsp;&nbsp;挂载点:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/boot</p>
+			</li>
+		</ol>
+	</li>
+
+	<li>
+		<h3>After Installation</h3>
+		<p>set boot by using easyBCD</p>
+		<h4>easyBCD:</h4>
+		<ol>
+			<li>add new entry -> Linux/BSD</li>
+			<li>Type: GRUB</li>
+			<li>Drive: /boot partition</li>
+			<li>add entry</li>
+		</ol>
+	</li>
+
+
+	<li>
+		<h3>Usage Tips</h3>
+		<ol>
+			<li>set root password <br />
+				<code>$ sudo passwd root</code>
+			</li>
+			<li>switch to root <br />
+				<code>$ sudo su</code>
+			</li>
+			<li>ubuntu install <br />
+				<code>sudo apt-get install filename</code>
+			</li>
+			<li>ubuntu uninstall <br />
+				<code>sudo apt-get remove filename</code> <br />
+				<code>sudo apt-get autoremove</code>
+			</li>
+			<li>commands
+				<ul>
+					<li>mkdir 目录名         => 创建一个目录</li>
+					<li>rmdir 空目录名      => 删除一个空目录</li>
+					<li>rm 文件名 文件名   => 删除一个文件或多个文件</li>
+					<li>rm –rf 非空目录名 => 删除一个非空目录下的一切</li>
+					<li>touch 文件名        => 创建一个空文件</li>
+
+					<li>mv file1 file2    => 将文件file1，更改文件名为 file2。</li>
+					<li>mv file1 dir1    => 将文件 file1，移到目录 dir1下，文件名仍为 file1。
+					</li>
+					<li>mv dir1 dir2    => 若目录 dir2 存在，则将目录 dir1，及其所有文件和子目录，移到目录 dir2 下，新目录名称为 dir1。若目录 dir2 不存在，则将dir1，及其所有文件和子目录，更改为目录 dir2。
+					</li>
+				</ul>
+			</li>
+		</ol>
+	</li>
+</ul>

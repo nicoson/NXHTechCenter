@@ -1,0 +1,43 @@
+<h2>Mongodb</h2>
+
+<ul>
+	<li>
+		<h3>Installation under Ubuntu</h3>
+
+	</li>
+
+	<li>
+		<h3>Usage</h3>
+		<ol>
+			<li>
+				<h4>set database and log</h4>
+				<ol>
+					<li>) mkdir data  //set database dir</li>
+					<li>) mkdir logs  //set logfiles dir</li>
+				</ol>
+			</li>
+
+			<li>
+				<h4>start service</h4>
+				<code>
+					$ mongod --smallfiles --dbpath /usr/local/mongodb/data --logpath /usr/local/mongodb/logs/mongodb.log
+				</code>
+			</li>
+
+			<li>
+				<h4>manipulate the database</h4>
+				<ol>
+					<li>
+						) open another terminal to open the mongo shell
+						<code>$ ./mongo</code>
+					</li>
+					<li>
+						) stop the service<br />
+						<code> >use admin </code><br />
+						<code> >db.shutdownServer() </code>
+					</li>
+				</ol>
+			</li>
+		</ol>
+	</li>
+</ul>

@@ -16,6 +16,7 @@
 	<!-- customer css file -->
 	<link rel="stylesheet" href="style/common.css">
 	<link rel="stylesheet" href="style/homepage.css">
+	<link rel="stylesheet" href="style/content.css">
 	
 	<!-- customer js file -->
 	<script src="js/ng-index.js"></script>
@@ -27,7 +28,15 @@
 		<h4>A simple sample built by AngularJS</h4>
 		<br />
 	</header>
-
+	
+	<nav class="navbar" ng-controller="homepageCtrl">
+		<a href="#/homepage">
+			<h5>Home</h5>
+		</a>
+		<div class="nav-unit" term="term" ng-repeat="term in terms">
+			<h5>{{term.name}}</h5>
+		</div>
+	</nav>
 
 
 	<section>

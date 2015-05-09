@@ -43,5 +43,10 @@
 		"name": "EJS",
 		"url": "ejs",
 		"color": "#69892c"
+	},
+	{
+		"name": "sinajs",
+		"url": "sinajs",
+		"color": "#e9333a"
 	}
 ]

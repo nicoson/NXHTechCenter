@@ -114,16 +114,69 @@
 				<code></code>
 			</li>
 			<li>
-				<h5></h5>
-				<code></code>
+
 			</li>
 			<li>
-				<h5></h5>
-				<code></code>
+				<h5>type of variables</h5>
+				<ul>
+					<li>num</li>
+					<li>float</li>
+					<li>
+						<h5>string</h5>
+						<p>methods:</p>
+						<ul>
+							<li>join()</li>
+						</ul>
+					</li>
+					<li>
+						<h5>list - array</h5>
+						<p>methods:</p>
+						<code>list = [xxx,xxx,xx]</code>
+						<code>append to the last: array.append(xxx)</code> <br />
+						<code>delete the last: array.pop(); </code> <br />
+						<code>delete the xth: array.pop(x-1); </code> <br />
+						<code>insert into any position: array.insert(position, data)</code> <br />
+						<code>slice: array[0:n]  array[::1]</code> <br />
+						<code>range(): range(10), range(start,end+1), range(start,end+1,step)</code>
+					</li>
+					<li>
+						<h5>list generator</h5>
+						<code>[x*x for x in range(1,11)]</code> <br />
+						<code>tds = ['<tr><td>%s</td><td>%s</td></tr>' % (name, score) for name, score in d.iteritems()]</code>
+						<code>[x * x for x in range(1, 11) if x % 2 == 0]</code>
+					</li>
+					<li>
+						<h5>tuple - static list</h5>
+						<p>methods:</p>
+						<code>tuple = (xx,xx,xx)</code>
+					</li>
+					<li>
+						<h5>dict - object</h5>
+						<p>methods:</p>
+						<code>dict = {a:x,b:y}</code> <br />
+						<code>dict.values(), get all the values</code> <br />
+						<code>dict.itervalues(), faster than values()</code> <br>
+						<code>dict.items(), get tuple of name and value</code> <br>
+						<code>dict.iteritems()</code>
+					</li>
+					<li>
+						<h5>set 枚举</h5>
+						<p>methods:</p>
+						<code>set=set([x,x,x,x])</code><br />
+						<code>set.add(xxx)</code><br />
+						<code>set.remove(xxx)</code>
+					</li>
+				</ul>
 			</li>
 			<li>
-				<h5></h5>
-				<code></code>
+				<h5>Built in functions</h5>
+				<ul>
+					<li>map</li>
+					<li>reduce</li>
+					<li>filter</li>
+					<li>sorted</li>
+					<li>anonymous function: lambda x,y: x*y</li>
+				</ul>
 			</li>
 			<li>
 				<h5></h5>

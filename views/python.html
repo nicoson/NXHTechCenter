@@ -107,7 +107,17 @@
 		<ol>
 			<li>
 				<h5>logic</h5>
-				<code></code>
+				<ul>
+					<li>
+						<h5>moving average</h5>
+						<code>
+							def movavg(values,window):
+								weights = np.repeat(1.0, window)/window
+								sma = np.convolve(values, weights, 'valid')
+								return sma
+						</code>
+					</li>
+				</ul>
 			</li>
 			<li>
 				<h5>figures</h5>

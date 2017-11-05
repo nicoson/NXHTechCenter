@@ -48,5 +48,10 @@
 		"name": "sinajs",
 		"url": "sinajs",
 		"color": "#e9333a"
+	},
+	{
+		"name": "Cordova",
+		"url": "cordova",
+		"color": "#e9333a"
 	}
 ]

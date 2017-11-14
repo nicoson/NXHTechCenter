@@ -1,6 +1,14 @@
 <h2>Cordova</h2>
 <ol>
 	<li>Install Cordova via npm</li>
+	<li>Create app by using Cordova
+		<code>
+			cordova create appName appUrl appID
+			cordova platform add android --save
+			cordova build android
+			cordova prepare	//	build the static file
+		</code>
+	</li>
 	<li>Install Java SDK 8 (instead of SDK 9, which will cause error)
 		<ol>
 			<li>config JAVA_HOME</li>
